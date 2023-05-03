@@ -213,11 +213,11 @@ jnz .START
 
 cmp $7, 80(%rsp)
 
-jle extra1 /**** jump to the extra section if number of bytes is at most 48 *****/ 
+jle extra1 /**** jump to the extra section if number of blocks is at most 7*****/ 
 
 
 
-     /**** For larger messages we need to compute number of chunks of blocks of input messages with number of look-ahead blocks(in this that no of look-ahead blocks is 4)********/ 
+     /**** For larger messages we need to compute number of chunks of blocks of input messages with number of look-ahead blocks(in this that no of look-ahead blocks is 8)********/ 
      comp_lookahead:    /*compute no of perfect chunks of look-ahead blocks*/
 
                
